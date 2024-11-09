@@ -41,12 +41,26 @@
                 <MenuItem Header="About"/>
             </MenuItem>
         </Menu>
-        
         <StatusBar DockPanel.Dock="Bottom" Height="30">
             <StatusBarItem>
                 <Label>Ready</Label>
             </StatusBarItem>
         </StatusBar>
-        <KIDEControls:VHSplit />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <KIDEControls:VHGrid Name="BaseVH" Background="Red"
+                Grid.Column="0" Width="Auto"/>
+            <GridSplitter Grid.Column="1" Width="5" ShowsPreview="True"
+                VerticalAlignment="Stretch" HorizontalAlignment="Center"
+                Background="Black"
+                          />
+            <KIDEControls:ExplorerPanel Width="Auto" Background="Blue"
+                Grid.Column="2"/>
+            
+        </Grid>
     </DockPanel>
 </Window>

@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="KIDEControls.VHSplit"
+﻿<UserControl x:Class="KIDEControls.VHGrid"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,9 @@
              xmlns:local="clr-namespace:KIDEControls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <DockPanel Background="DimGray" Name="DockBase" AllowDrop="True" Drop="DockPanel_Drop" Width="auto" Height="auto">
+    <Grid Name="BaseGrid" AllowDrop="True" DragDrop.Drop="Grid_Drop" Width="Auto" Height="Auto"
+          
+          >
             
-    </DockPanel>
+    </Grid>
 </UserControl>

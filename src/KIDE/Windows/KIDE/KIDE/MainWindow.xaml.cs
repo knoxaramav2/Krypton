@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using KIDEControls;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +20,13 @@ namespace KIDE
         public MainWindow()
         {
             InitializeComponent();
+            LoadLayout();
+        }
+
+        private void LoadLayout()
+        {
+            
+            BaseVH.AddControl(new CodeEditor());
         }
 
         private void CmdCut(object sender, ExecutedRoutedEventArgs e)

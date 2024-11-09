@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace KIDEControls
 {
     /// <summary>
-    /// Interaction logic for CodeEditor.xaml
+    /// Interaction logic for ExplorerPanel.xaml
     /// </summary>
-    public partial class CodeEditor : UserControl
+    public partial class ExplorerPanel : UserControl
     {
-        public CodeEditor()
+        public ExplorerPanel()
         {
             InitializeComponent();
         }
